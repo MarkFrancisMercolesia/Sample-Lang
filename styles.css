@@ -1,0 +1,265 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    color: whitesmoke;
+  }
+
+  .all {
+    width: 100%;
+  }
+  
+  nav {
+    height: 80px;
+    background: #1d1c1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+  }
+  
+
+  nav a {
+    text-decoration: none;
+    color:#F1F6F9;
+    padding: 0 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s ease;
+
+  }
+
+  .branding {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  nav a:hover {
+    color: #007ced;
+    transition: .20s;
+    transform: translateY(-10px);
+ }
+
+  .body-color {
+    background-color: #1d1c1c;
+    width: 100%;
+  }
+  
+  .body-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+  }
+  .descp1 {
+    font-size: 30px;
+    transition: transform 0.3s ease;
+  }
+
+  .descp1:hover {
+    transform: translateY(-10px);
+  }
+  .column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: #000;
+    padding: 0rem 2rem;
+  }
+  
+  .column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  
+  .column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .branding {
+    font-size: 25px;
+    display: inline-block;
+  }
+
+  h4 {
+    color:#007ced;
+    margin-top: 7px;
+  }
+  span {
+    color:#007ced;
+  }
+
+  span:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+
+  .pup {
+    margin-top:0;
+  }
+
+  button {
+    width: 200px;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: 3px solid #007ced;
+    border-width: solid 3px;
+    color: #F1F6F9;
+    background: #1d1c1c;
+    cursor: pointer;
+    border-radius: 10px;
+    transition:background-color 0.30s;
+    transition: transform 0.3s ease;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  button:hover {
+    background: #007ced;
+    transform: translateY(-5px);
+    color: #1d1c1c;
+    box-shadow: 0 0 5px #007ced, 0 0 10px #007ced, 0 0 15px #007ced;
+  }
+
+  .column-right {
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+    transition: transform 0.3s ease;
+  }
+
+  .column-right img:hover {
+    transform: translateY(-5px);
+  }
+  
+  .column-right img {
+    width: 400px;
+    margin-left: 150px;
+    border: 50%;
+    border-radius: 10px solid #007ced;
+    clip-path: circle();
+    border-color: #007ced;
+  }
+ 
+  .about_me {
+    display: flex;
+    text-align: start;
+  }
+
+.socmed-icons {
+    position:absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 140px;
+}
+
+.socmed-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #007ced;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: 7px;
+    margin-bottom: 70px;
+    color:#1d1c1c;
+    text-decoration: none;
+    transition: background-color 0.30s;
+    transition: transform 0.3s ease;
+}
+
+.socmed-icons a:hover {
+  transform: translateY(-5px);
+  background-color: #007ced;
+  box-shadow: 0 0 5px #007ced, 0 0 10px #007ced, 0 0 15px #007ced;
+}
+
+.my-name {
+  color:#F1F6F9;
+  transition: transform 0.3s ease;
+}
+
+.pup {
+  transition: transform 0.3s ease;
+}
+    
+.my-name:hover, .pup:hover {
+  color:#007ced;
+  transform: translateY(-5px);
+}
+
+.about_me {
+  color:#007ced;
+  transition: transform 0.3s ease;
+}
+
+.about_me:hover {
+  transform: translateY(-5px);
+}
+
+.resume {
+  background-color: blue;;
+}
+
+
+@media screen and (max-width: 767px) {
+  /* Styles for devices with a maximum width of 767px (phones) */
+
+  .all {
+    padding: 0 1rem; /* Adjust the padding for smaller screens */
+  }
+
+  nav {
+    height: 60px; /* Reduce the height of the navigation bar for phones */
+    padding: 0 1rem; /* Adjust the padding for smaller screens */
+  }
+
+  nav a {
+    font-size: 14px; /* Reduce the font size for navigation links on phones */
+  }
+
+  .body-container {
+    grid-template-columns: 1fr; /* Change to a single-column layout for phones */
+    height: auto; /* Let the content determine the height */
+    padding: 1rem; /* Adjust the padding for smaller screens */
+  }
+
+  .column-left,
+  .column-right {
+    padding: 1rem; /* Adjust the padding for smaller screens */
+    text-align: center; /* Center align the content for phones */
+  }
+
+  .column-left h1 {
+    font-size: 2rem; /* Reduce the font size for heading on phones */
+  }
+
+  .column-left p {
+    font-size: 1rem; /* Reduce the font size for paragraphs on phones */
+  }
+
+  .column-right img {
+    width: 80%; /* Adjust the image width for phones */
+    margin-left: 0; /* Center the image for phones */
+  }
+
+  .socmed-icons {
+    position: static; /* Remove absolute positioning for social media icons */
+    justify-content: center; /* Center align the icons for phones */
+    margin-left: 0; /* Remove the left margin for icons */
+  }
+  
+  .socmed-icons a {
+    margin-bottom: 10px; /* Reduce the bottom margin for icons on phones */
+  }
+  
+  /* Adjust any other styles as needed for smaller screens */
+}
